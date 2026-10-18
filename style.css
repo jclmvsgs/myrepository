@@ -1,60 +1,66 @@
-/* Activity 7: Contact Form Styling */
-.contact-form {
-  max-width: 600px;
-  margin: 25px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: left;
-}
+/* Activity 8: Responsive Design (Mobile & Tablet Layouts) */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
 
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
+  /* Navigation Bar Adjustments */
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
 
-.form-group label {
-  color: #e9d5ff;
-  font-weight: 500;
-  font-size: 0.95rem;
-}
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
 
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 12px 16px;
-  background: #150f28;
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 8px;
-  color: #ffffff;
-  font-family: inherit;
-  font-size: 0.95rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
+  .nav-links a {
+    font-size: 0.85rem;
+  }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #c084fc;
-  box-shadow: 0 0 10px rgba(192, 132, 252, 0.4);
-}
+  /* Hero Section Adjustments */
+  .hero {
+    padding: 35px 15px;
+  }
 
-.btn-submit {
-  padding: 14px 28px;
-  background: linear-gradient(90deg, #7e22ce 0%, #a855f7 100%);
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
-  transition: all 0.3s ease;
-  align-self: center;
-}
+  .hero h1 {
+    font-size: 1.8rem;
+  }
 
-.btn-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.7);
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  /* Section Adjustments */
+  .section {
+    padding: 25px 15px;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Projects & Skills Cards Responsive Layout */
+  .projects-container {
+    gap: 15px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  /* Table Adjustments for Small Screens */
+  .custom-table th,
+  .custom-table td {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  /* Contact Form Adjustments */
+  .contact-form {
+    width: 100%;
+  }
 }
