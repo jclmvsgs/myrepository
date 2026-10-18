@@ -1,29 +1,188 @@
-<!-- Activity 7: Contact Form Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>May tanong ka ba o gustong makipag-collaborate? Mag-iwan ng mensahe sa ibaba!</p>
-    
-    <form class="contact-form" action="#" method="POST">
-      <div class="form-group">
-        <label for="name">Pangalan</label>
-        <input type="text" id="name" name="name" placeholder="Ipasok ang iyong pangalan" required>
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jecil Mae Vesagas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Ipasok ang iyong email" required>
-      </div>
+    <!-- Activity 6: Sticky Navigation Menu -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Jecil Mae</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-      <div class="form-group">
-        <label for="subject">Paksa (Subject)</label>
-        <input type="text" id="subject" name="subject" placeholder="Paksa ng mensahe" required>
-      </div>
+    <!-- Activity 1: Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Jecil Mae Vesagas" class="profile-img">
+            <h1>Jecil Mae Vesagas</h1>
+            <p class="tagline">Crafting Clean Code & Digital Experiences</p>
+            <p class="bio">
+                Hello and welcome! I'm a passionate learner and developer focused on building 
+                clean, functional, and responsive websites. Feel free to explore my work and 
+                technical journey below.
+            </p>
+            <a href="#projects" class="btn">Learn More</a>
+        </div>
+    </section>
 
-      <div class="form-group">
-        <label for="message">Mensahe</label>
-        <textarea id="message" name="message" rows="5" placeholder="Isulat ang iyong mensahe rito..." required></textarea>
-      </div>
+    <!-- Activity 2: About Me Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a dedicated student passionate about web development, coding, and modern technologies. 
+            I enjoy building clean, functional, and responsive web pages while continuously expanding my technical knowledge.
+        </p>
+        <p><strong>Hobbies & Interests:</strong> Coding, exploring open-source software, reading tech articles, and problem-solving.</p>
+    </section>
 
-      <button type="submit" class="btn-submit">Ipadala ang Mensahe</button>
-    </form>
-  </section>
+    <!-- Activity 3: Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Semantic structuring</p>
+            </div>
+            <div class="skill-card">
+                <h3>CSS3</h3>
+                <p>Styling & Responsive Layouts</p>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript Basics</h3>
+                <p>Core programming fundamentals</p>
+            </div>
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+                <p>Version control & Pages deployment</p>
+            </div>
+            <div class="skill-card">
+                <h3>Termux CLI</h3>
+                <p>Command-line interface usage</p>
+            </div>
+            <div class="skill-card">
+                <h3>Responsive Design</h3>
+                <p>Mobile-first web layouts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity 4: Projects Section -->
+    <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Personal Portfolio Website">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive personal portfolio website showcasing my web development projects and technical skills built with HTML5 and CSS3.</p>
+                <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Flexbox</span>
+                </div>
+                <a href="https://github.com/jclmvsgs/myrepository" target="_blank" class="project-btn">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="Student Record System Mockup">
+                <h3>Student Record System Mockup</h3>
+                <p>A web-based interface design for managing student academic records with clean tables and interactive navigation layouts.</p>
+                <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS Grid</span>
+                    <span>CSS3</span>
+                </div>
+                <a href="https://github.com/jclmvsgs/myrepository" target="_blank" class="project-btn">View Code</a>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Interactive Web Dashboard UI">
+                <h3>Interactive Web Dashboard UI</h3>
+                <p>A modern user interface design featuring dark mode aesthetics, dynamic card layouts, and responsive media query breakpoints.</p>
+                <div class="project-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Responsive</span>
+                </div>
+                <a href="https://github.com/jclmvsgs/myrepository" target="_blank" class="project-btn">View Code</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity 5: Education & Experience Section -->
+    <section id="education" class="section">
+        <h2>Education & Experience</h2>
+        <div class="table-container">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Level / Role</th>
+                        <th>Institution / Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024 - Present</td>
+                        <td>BS in Information Technology</td>
+                        <td>Web Development & Systems Fundamentals</td>
+                    </tr>
+                    <tr>
+                        <td>2022 - 2024</td>
+                        <td>Senior High School</td>
+                        <td>TVL - Information and Communications Technology (ICT)</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Web Development Learner</td>
+                        <td>HTML, CSS, Git, and GitHub Basics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Activity 7: Contact Form Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>May tanong ka ba o gustong makipag-collaborate? Mag-iwan ng mensahe sa ibaba!</p>
+
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Pangalan</label>
+                <input type="text" id="name" name="name" placeholder="Ipasok ang iyong pangalan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Ipasok ang iyong email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Paksa (Subject)</label>
+                <input type="text" id="subject" name="subject" placeholder="Paksa ng mensahe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensahe</label>
+                <textarea id="message" name="message" rows="5" placeholder="Isulat ang iyong mensahe rito..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Ipadala ang Mensahe</button>
+        </form>
+    </section>
+
+</body>
+</html>
